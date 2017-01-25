@@ -697,3 +697,17 @@ p.abstract {
 footer[role='contentinfo'] .footer-links a.footer-link {
   display: inline;
 }
+
+.foo {
+  background-color: black;
+  @include media($mobile) {
+    background-color: red;
+  }
+  @include media($tablet) {
+    background-color: green;
+  }
+  @include media($desktop) {
+    background-color: blue;
+  }
+}
+
